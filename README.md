@@ -1,1 +1,1 @@
-![Evolution X](https://github.com/Evolution-XYZ/XDA/raw/udc/assets/keep_evolving.png)
+![Evolution X](https://github.com/Evolution-X/XDA/raw/udc/assets/keep_evolving.png)
