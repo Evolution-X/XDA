@@ -230,16 +230,6 @@ generate_thread() {
             fi
         done
 
-        # Device support URL
-        while true; do
-            read -p "Device support URL: " device_support_url
-            if [[ $device_support_url =~ ^(https?://)?(www\.)?(discord\.com|discord\.gg|t\.me|telegram\.me|telegram\.org)(.*) ]]; then
-                break
-            else
-                echo -e "${RED}Invalid format. Please enter a valid URL from Discord or Telegram.${ENDCOLOR}"
-             fi
-        done
-
         cat << EOF > /tmp/generated_xda_thread.txt
 [CENTER]
 $manufacturer_name $device_name
@@ -253,7 +243,6 @@ $codenames
 [URL='https://xdaforums.com/m/anierinb.7125966/']Anierin Bliss[/URL] - Co-Founder/Co-Developer
 [URL='https://xdaforums.com/m/realakito.9008281/']Akito Mizukito[/URL] - Co-Founder/Project Manager
 
-[I]Reach us on Twitter! [URL='https://twitter.com/EvolutionXROM']@EvolutionXROM[/URL][/I]
 Check out our [URL='https://evolution-x.org/']website[/URL]!
 
 [IMG]https://raw.githubusercontent.com/Evolution-X/XDA/udc/assets/features.png[/IMG]
